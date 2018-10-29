@@ -11,7 +11,7 @@ students = []
 def get_students_titlecase():
     student_titlecase = []
     for eachStudent in students:
-        student_titlecase = eachStudent['name'].title()    #.title capitalises each word in a sentence. 
+        student_titlecase.append(eachStudent['name'].title())    #.title capitalises each word in a sentence. 
     return student_titlecase
 
 
@@ -24,6 +24,7 @@ def print_student_titleCase():
 def addStudent(name, studentID=322):
     student = {'name': name, 'studentID' : studentID}
     students.append(student)
+
 
 # functions saved student names. 
 def saveStudentName(student):
@@ -50,5 +51,9 @@ def read_file():
 
 read_file()
 print_student_titleCase()
+
 studentName = raw_input('Enter your student name : ').strip()
 student_id = raw_input('Enter your student ID : ')
+
+addStudent(studentName, student_id)
+saveStudentName(studentName)
