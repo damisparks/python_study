@@ -21,3 +21,4 @@ class Student:
     def get_school_name(self):
         """returns the school name"""
         return self.school_name 
+
