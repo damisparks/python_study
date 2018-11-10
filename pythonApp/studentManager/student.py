@@ -6,9 +6,10 @@ class Student:
 
     school_name = 'Bhetey University'
 
-    def __init__(self, name, student_ids=322):
+    def __init__(self, name, last_name, student_ids=322):
         self.name = name
-        self.ids = student_ids
+        self.last_name = last_name
+        self.student_ids = student_ids
         students.append(self)
 
     def __str__(self):
