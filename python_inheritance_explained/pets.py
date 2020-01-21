@@ -1,59 +1,59 @@
 from abc import ABC, abstractmethod
 
-class Animal(ABC):
+class User(ABC):
     
     def __init__(self, name, age):
-        """Create a new animal."""
+        """Create a new User."""
         self.name = name
         self.age = age
         
     @abstractmethod
-    def speak(self):
+    def greet(self):
         pass
     
 
-class Cat(Animal):
+class Kate(User):
     isIndoor = True
 
     def __init__(self, name, age, isIndoor=True):
-        """Create a new cat"""
+        """Create a new """
         self.isIndoor = isIndoor
         super().__init__(name, age)
 
 
-    def speak(self):
-        """Make the cat pur"""
-        print(f'{self.name} says, "purrrrrr"')
+    def greet(self):
+        """Make the kate greet"""
+        print(f'{self.name} says, "Hello Everyone"')
         
         
-class Dog(Animal):
+class John(User):
 
     def __init__(self, name:str, age:int, breed:str, weight:int):
-        """Create a new dog"""
+        """Create a new John"""
         self.breed = breed
         self.weight = weight
         super().__init__(name, age)
 
-    def speak(self) -> None:
-        """Make the dog bark"""
-        print(f'{self.name} says, "woof"')
+    def greet(self) -> None:
+        """Make the john greet"""
+        print(f'{self.name} says, "Stay focused."')
         
-class Frog(Animal):
+class Doe(User):
     
     def __init__(self, name:str, age:int, color:str):
-        """Create a new frog"""
+        """Create a new Doe"""
         self.color = color
         super().__init__(name, age)
     
-    def speak(self) -> None:
-        """Make frog speak."""
-        print(f'{self.name} says, "croak!!!"')
+    def greet(self) -> None:
+        """Make Doe greet."""
+        print(f'{self.name} says, "Stay Cool!!!"')
         
 
 if __name__ == "__main__":
-    frogy = Frog("Froggy", 6, "Red")
-    wiskers = Cat('Wiskers', 3)
-    paws = Dog('Mr. Paws', 4, 'dachshund', 18)
-    wiskers.speak()
-    paws.speak()
-    frogy.speak()
+    doe = Doe("Doe", 6, "Red")
+    katey = Kate('Katey', 3)
+    johnny = John('Mr. Johnny', 4, 'Johnson..', 18)
+    katey.greet()
+    johnny.greet()
+    doe.greet()
