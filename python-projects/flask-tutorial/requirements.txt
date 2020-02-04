@@ -1,26 +1,19 @@
-astroid==2.3.3
 attrs==19.3.0
 Click==7.0
 coverage==5.0.3
 Flask==1.1.1
--e git+https://github.com/damisparks/python_study.git@ebec97af63317c5ef9c501937555f3ca8f7280c8#egg=flaskr&subdirectory=pythonApp/flask-tutorial
+-e git+https://github.com/damisparks/python_study.git@8ca7cd85e5f65192f7b83d15d596ea1969fe84db#egg=flaskr&subdirectory=python-projects/flask-tutorial
 importlib-metadata==1.5.0
-isort==4.3.21
 itsdangerous==1.1.0
-Jinja2==2.11.0
-lazy-object-proxy==1.4.3
+Jinja2==2.11.1
 MarkupSafe==1.1.1
-mccabe==0.6.1
 more-itertools==8.2.0
 packaging==20.1
 pluggy==0.13.1
 py==1.8.1
-pylint==2.4.4
 pyparsing==2.4.6
 pytest==5.3.5
 six==1.14.0
-typed-ast==1.4.1
 wcwidth==0.1.8
 Werkzeug==0.16.1
-wrapt==1.11.2
 zipp==2.1.0
