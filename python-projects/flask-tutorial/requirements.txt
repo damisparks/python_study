@@ -5,7 +5,7 @@ Flask==1.1.1
 -e git+https://github.com/damisparks/python_study.git@8ca7cd85e5f65192f7b83d15d596ea1969fe84db#egg=flaskr&subdirectory=python-projects/flask-tutorial
 importlib-metadata==1.5.0
 itsdangerous==1.1.0
-Jinja2==2.11.1
+Jinja2==2.11.3
 MarkupSafe==1.1.1
 more-itertools==8.2.0
 packaging==20.1
